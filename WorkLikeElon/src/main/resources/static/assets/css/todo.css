@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@500;600&family=Poppins:wght@300;400;500;600;700;800&family=Seaweed+Script&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.todo-container{
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(125deg,#135677,#4968f3);
+    padding: 10px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 60%;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding:40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2 {
+    color :#002765;
+    display:flex;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef3;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+input, select {
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: none;
+    
+}
+
+button{
+    border:none;
+    outline:none;
+    padding :15px 15px;
+    background: #5a04e5;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}

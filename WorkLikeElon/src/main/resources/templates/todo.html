@@ -5,16 +5,17 @@
     <!--Material icon-->    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
       rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../static/assets/css/style.css">
+    <link rel="stylesheet" href="../static/assets/css/todo.css">
 </head>
 <body>
-    <div class="container">
+    <!-- <div class="container">
         <aside>
             <div class="top">
                 <div class="logo">
                     <img>
                     <h2>
-                        <a href="/index.html">Pro<span class="u">U</span></a>
+                        <a href="/templates/index.htmlindex.html">Pro<span class="u">U</span></a>
                     </h2>
                 </div>
                 <div class="close" id="clsoe-btn">
@@ -22,7 +23,7 @@
                     </span>
                 </div>
                 <div class="sidebar">
-                    <a href="/index.html"  id="home-link" >
+                    <a href="/templates/index.htmlindex.html" id="home-link" >
                         <span class="material-icons-sharp">
                             home
                         </span>
@@ -34,7 +35,7 @@
                         </span>
                         <h3>To-Do</h3>
                     </a>
-                    <a href="/focus.html" id="focus-link">
+                    <a href="/templates/focus.htmlfocus.html" id="focus-link">
                         <span class="material-icons-sharp">
                             timer
                         </span>
@@ -55,11 +56,27 @@
                 </div>
              </div>
         </aside>
-    </div>
+    </div> -->
     <main>
-
+        <div class="todo-container">
+            <div class="todo-app">
+                <h2>To-Do List</h2>
+                <div class="row">
+                    <form action="/addTask" mehtod="POST"></form>
+                    <input type="text" id="title" placeholder="Add task title">
+                    <input type="text" id="description" placeholder="Describe your task">
+                    <select name="priority" id="priority">
+                        <option value="high">high</option>
+                        <option value="medium">medium</option>
+                        <option value="low">low</option>
+                    </select>
+                    <input type="hidden" id="status" name="status"  value="open">
+                    <button> Add Task </button>
+                </div>
+            </div>
+        </div>
     </main>
     <!--js file-->
-    <script src ="./assets/js/index.js"></script>
+    <script src ="../static/assets/js/index.js"></script>
 </body>
 </html>

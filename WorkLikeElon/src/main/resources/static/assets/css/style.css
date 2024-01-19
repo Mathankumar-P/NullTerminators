@@ -50,7 +50,7 @@ body{
 }
 .container{
     display: grid;
-    width:86%;
+    width:86vh;
     margin:0 0;
     gap: 1.8 rem;
     grid-template-columns: 14rem auto 23rem;
@@ -131,7 +131,7 @@ aside .sidebar{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    position: relative;
+    position:relative;
     top:1rem;   
 }
 
